@@ -147,4 +147,6 @@ npm run dev
 - [Ver aplicación en vivo](https://credit-risk-ml-rust.vercel.app)
 - [API Documentation](https://credit-risk-api-9e3u.onrender.com/docs)
 
+> ⚠️ El backend está desplegado en **Render** (plan gratuito) y el frontend en **Vercel**. Si el backend no recibe tráfico por un tiempo, puede tardar hasta 50 segundos en responder la primera solicitud.
+
 **Autor:** Mathias Sebastian Huanca Pretell
