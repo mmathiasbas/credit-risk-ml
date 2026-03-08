@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: credit-risk-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: MODEL_PATH
+        value: models/model.pkl
+      - key: SCALER_PATH
+        value: data/robust_scaler.pkl
+      - key: DATA_PATH
+        value: data/df_features.csv
+      - key: FEATURE_COLS_PATH
+        value: data/feature_cols.json
+      - key: SCALE_COLS_PATH
+        value: data/scale_cols.json
+      - key: DATABASE_URL
+        value: sqlite:///./history.db
