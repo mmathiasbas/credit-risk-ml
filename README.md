@@ -11,9 +11,11 @@
 
 El **riesgo crediticio** es la probabilidad de que un cliente o prestatario no cumpla con sus obligaciones de pago a tiempo. Para las instituciones financieras, predecir el comportamiento de pagos es crítico en la toma de decisiones para aceptar créditos, aumentar líneas o proponer programas de salvataje.
 
-Este proyecto implementa una solución _end-to-end_ en **Data Science** para evaluar la probabilidad de incumplimiento (_default_) basado en información demográfica, historial de comportamiento y estatus financiero de los últimos seis meses. La solución incluye un pipeline exhaustivo de Machine Learning, una API REST rápida para el servicio en tiempo real y componentes de visualización y predicción embebidos en una aplicación web interactiva (Dashboard).
+Este proyecto implementa una solución end-to-end en Data Science para evaluar la probabilidad de incumplimiento (default) basado en información demográfica, historial de comportamiento y estatus financiero de los últimos seis meses. La solución incluye un pipeline exhaustivo de Machine Learning, una API REST rápida para el servicio en tiempo real y componentes de visualización y predicción embebidos en una aplicación web interactiva (Dashboard).
 
-El objetivo es no solo proveer una calificación de riesgo, sino comprender profundamente las variables (como la tasa de uso o _Utilization Rate_, ratios de pago entre otros features introducidos) y sus correlaciones, ofreciendo control, interpretabilidad y herramientas para un posible monitoreo preventivo.
+El modelo fue entrenado con el dataset público **Default of Credit Card Clients** del [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients), que contiene información de 30.000 clientes de tarjetas de crédito de Taiwán. Cada registro incluye variables demográficas (edad, sexo, nivel educativo, estado civil), el límite de crédito asignado, el historial de pagos de los últimos 6 meses y los montos facturados y pagados en ese período. El 22% de los clientes incurrió en default, lo que representa un escenario realista de desbalance de clases típico en aplicaciones financieras reales.
+
+El objetivo es no solo proveer una calificación de riesgo, sino comprender profundamente las variables (como la tasa de uso o Utilization Rate, ratios de pago entre otros features introducidos) y sus correlaciones, ofreciendo control, interpretabilidad y herramientas para un posible monitoreo preventivo.
 
 ## Estructura del Proyecto
 
