@@ -19,26 +19,33 @@ El objetivo es no solo proveer una calificación de riesgo, sino comprender prof
 
 ```text
 repositorio/
-├── ml_pipeline/       # Notebooks y scripts de Data Science (No modificar)
-├── backend/           # API REST FastAPI (Python)
+├── ml_pipeline/           # Notebooks y pipeline de Data Science
+│   ├── data/
+│   │   ├── raw/           # Dataset original UCI
+│   │   └── processed/     # Datasets procesados, scalers y feature cols
+│   ├── models/            # Modelo entrenado y metadatos
+│   ├── notebooks/         # 6 notebooks del pipeline completo
+│   └── requirements.txt
+├── backend/               # API REST FastAPI (Python)
 │   ├── app/
 │   │   ├── main.py
-│   │   ├── routes/    # Endpoints de /predict, /charts y /history
-│   │   ├── services/  # Lógica del modelo y transformaciones de ML
-│   │   ├── database/  # Conexión SQLite y modelos SQLAlchemy
-│   │   └── schemas/   # Modelos Pydantic para validación de datos
-│   ├── data/          # Datasets preprocesados y scalers
-│   ├── models/        # Artefactos del modelo supervisado entrenado
+│   │   ├── routes/        # Endpoints de /predict, /charts y /history
+│   │   ├── services/      # Lógica del modelo y transformaciones de ML
+│   │   ├── database/      # Conexión SQLite y modelos SQLAlchemy
+│   │   └── schemas/       # Modelos Pydantic para validación de datos
+│   ├── data/              # Datasets preprocesados y scalers
+│   ├── models/            # Artefactos del modelo entrenado
 │   ├── requirements.txt
 │   └── .env.example
-├── frontend/          # SPA React + Vite + TailwindCSS
+├── frontend/              # SPA React + Vite + TailwindCSS
 │   ├── src/
-│   │   ├── components/# Componentes reutilizables, formularios y gráficos
-│   │   ├── pages/     # Las diferentes vistas (Home, Predict, Dashboard, History, About)
-│   │   └── services/  # Integración y consultas a la API (Axios)
+│   │   ├── components/    # Componentes reutilizables, formularios y gráficos
+│   │   ├── pages/         # Home, Predict, Dashboard, History, About
+│   │   └── services/      # Integración con la API
 │   ├── package.json
 │   ├── tailwind.config.js
 │   └── .env.example
+├── screenshots/           # Capturas de la interfaz
 └── README.md
 ```
 
@@ -138,7 +145,7 @@ npm run dev
 ## Demo
 
 🌐 **[**Ver aplicación en vivo**](**https://credit-risk-ml-rust.vercel.app**)**
-⚙️ **[**API Documentation**](**https://credit-risk-api-9e3u.onrender.com/docs**)**
+⚙️ **[**API Documentation**](**https://credit-risk-api-9e3u.onrender.com/docs**)\*\*
 
 ---
 
