@@ -144,9 +144,7 @@ npm run dev
 
 ## Demo
 
-🌐 **[**Ver aplicación en vivo**](**https://credit-risk-ml-rust.vercel.app**)**
-⚙️ **[**API Documentation**](**https://credit-risk-api-9e3u.onrender.com/docs**)\*\*
-
----
+- [Ver aplicación en vivo](https://credit-risk-ml-rust.vercel.app)
+- [API Documentation](https://credit-risk-api-9e3u.onrender.com/docs)
 
 **Autor:** Mathias Sebastian Huanca Pretell
